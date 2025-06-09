@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OneClickYT</title>
+  <link rel="stylesheet" href="styles/popup.css">
+  <link rel="stylesheet" href="styles/animations.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <div class="logo">
+        <i class="fab fa-youtube"></i>
+        <h1>OneClickYT</h1>
+      </div>
+      <div class="theme-toggle">
+        <input type="checkbox" id="dark-mode-toggle" class="toggle-checkbox">
+        <label for="dark-mode-toggle" class="toggle-label">
+          <span class="toggle-ball"></span>
+        </label>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="control-section">
+        <h2 class="section-title">Quick Controls</h2>
+        
+        <div class="control-grid">
+          <!-- Quality Controls -->
+          <div class="control-card" id="quality-control">
+            <div class="control-icon">
+              <i class="fas fa-video"></i>
+            </div>
+            <h3>Quality</h3>
+            <div class="control-options">
+              <button class="option-btn" data-quality="144p">144p</button>
+              <button class="option-btn" data-quality="240p">240p</button>
+              <button class="option-btn active" data-quality="360p">360p</button>
+              <button class="option-btn" data-quality="480p">480p</button>
+              <button class="option-btn" data-quality="720p">720p</button>
+              <button class="option-btn" data-quality="1080p">1080p</button>
+            </div>
+          </div>
+          
+          <!-- Speed Controls -->
+          <div class="control-card" id="speed-control">
+            <div class="control-icon">
+              <i class="fas fa-tachometer-alt"></i>
+            </div>
+            <h3>Speed</h3>
+            <div class="control-options">
+              <button class="option-btn" data-speed="0.5">0.5x</button>
+              <button class="option-btn" data-speed="0.75">0.75x</button>
+              <button class="option-btn active" data-speed="1">1x</button>
+              <button class="option-btn" data-speed="1.25">1.25x</button>
+              <button class="option-btn" data-speed="1.5">1.5x</button>
+              <button class="option-btn" data-speed="2">2x</button>
+            </div>
+          </div>
+          
+          <!-- Volume Boost -->
+          <div class="control-card" id="volume-control">
+            <div class="control-icon">
+              <i class="fas fa-volume-up"></i>
+            </div>
+            <h3>Volume Boost</h3>
+            <div class="control-slider">
+              <input type="range" min="0" max="200" value="100" class="slider" id="volume-slider">
+              <span class="slider-value">100%</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="feature-section">
+        <h2 class="section-title">Extra Features</h2>
+        
+        <div class="feature-grid">
+          <div class="feature-card" id="pip-toggle">
+            <div class="feature-icon">
+              <i class="fas fa-expand"></i>
+            </div>
+            <h3>Picture-in-Picture</h3>
+            <div class="toggle-switch">
+              <input type="checkbox" id="pip-switch" class="switch-checkbox">
+              <label for="pip-switch" class="switch-label"></label>
+            </div>
+          </div>
+          
+          <div class="feature-card" id="theater-toggle">
+            <div class="feature-icon">
+              <i class="fas fa-theater-masks"></i>
+            </div>
+            <h3>Theater Mode</h3>
+            <div class="toggle-switch">
+              <input type="checkbox" id="theater-switch" class="switch-checkbox">
+              <label for="theater-switch" class="switch-label"></label>
+            </div>
+          </div>
+          
+          <div class="feature-card" id="skip-ads">
+            <div class="feature-icon">
+              <i class="fas fa-ad"></i>
+            </div>
+            <h3>Skip Ads</h3>
+            <div class="toggle-switch">
+              <input type="checkbox" id="skip-ads-switch" class="switch-checkbox">
+              <label for="skip-ads-switch" class="switch-label"></label>
+            </div>
+          </div>
+          
+          <div class="feature-card" id="auto-hd">
+            <div class="feature-icon">
+              <i class="fas fa-magic"></i>
+            </div>
+            <h3>Auto HD</h3>
+            <div class="toggle-switch">
+              <input type="checkbox" id="auto-hd-switch" class="switch-checkbox">
+              <label for="auto-hd-switch" class="switch-label"></label>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <footer class="app-footer">
+      <p>OneClickYT v1.0</p>
+      <div class="social-links">
+        <a href="https://github.com/uditha1994/OneClickYT" class="social-link"><i class="fab fa-github"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </footer>
+  </div>
+  
+  <script src="scripts/popup.js"></script>
+</body>
+</html>

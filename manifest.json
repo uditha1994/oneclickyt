@@ -1,0 +1,50 @@
+{
+    "manifest_version": 3,
+    "name": "OneClickYT",
+    "version": "1.0",
+    "description": "Enhance your YouTube experience with one-click controls",
+    "icons": {
+        "16": "assets/icon16.png",
+        "48": "assets/icon48.png",
+        "128": "assets/icon128.png"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "assets/icon16.png",
+            "48": "assets/icon48.png",
+            "128": "assets/icon128.png"
+        }
+    },
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "storage",
+        "contextMenus"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.youtube.com/*"
+            ],
+            "js": [
+                "scripts/content.js"
+            ],
+            "run_at": "document_end",
+            "all_frames": true
+        }
+    ],
+    "background": {
+        "service_worker": "scripts/background.js"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "assets/*"
+            ],
+            "matches": [
+                "*://*.youtube.com/*"
+            ]
+        }
+    ]
+}

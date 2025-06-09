@@ -1,0 +1,69 @@
+/* Fade-in animation for the popup */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .app-container {
+    animation: fadeIn 0.3s ease-out forwards;
+  }
+  
+  /* Pulse animation for active buttons */
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  
+  .option-btn.active {
+    animation: pulse 0.5s ease;
+  }
+  
+  /* Hover animations for cards */
+  .control-card, .feature-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Ripple effect for buttons */
+  .ripple {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .ripple:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background-image: radial-gradient(circle, #fff 10%, transparent 10.01%);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    transform: scale(10, 10);
+    opacity: 0;
+    transition: transform .5s, opacity 1s;
+  }
+  
+  .ripple:active:after {
+    transform: scale(0, 0);
+    opacity: 0.3;
+    transition: 0s;
+  }
+  
+  /* Loading spinner */
+  .spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: var(--primary-color);
+    animation: spin 1s ease-in-out infinite;
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
