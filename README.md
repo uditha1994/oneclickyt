@@ -62,7 +62,7 @@ Enable "Skip Ads" in the popup (experimental).
 ---
 
 ## 📜 License
-MIT © [Your Name](https://github.com/uditha1994)
+MIT © [Uditha Landekumbura](https://github.com/uditha1994)
 
 ---
 
