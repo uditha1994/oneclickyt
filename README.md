@@ -19,9 +19,9 @@ A browser extension to **control YouTube video quality, speed, and more with one
 ---
 
 ## 🖥️ Screenshots
-| Popup UI | Quality Selector | Speed Control |
-|----------|------------------|---------------|
-| <img src="screenshots/popup.png" width="300"> | <img src="screenshots/quality.png" width="300"> | <img src="screenshots/speed.png" width="300"> |
+| Popup UI | Speed Control |
+|----------|---------------|
+| <img src="screenshots/popup.png" width="300"> | <img src="screenshots/extra.png" width="300"> |
 
 *(Replace with your actual screenshot paths)*
 
