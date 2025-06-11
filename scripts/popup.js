@@ -1,4 +1,18 @@
 document.addEventListener('DOMContentLoaded', function () {
+  // Create loading overlay
+  const loadingOverlay = document.createElement('div');
+  loadingOverlay.className = 'loading-overlay';
+  loadingOverlay.innerHTML = `
+        <div class="loading-spinner">
+            <div class="spinner-circle"></div>
+            <div class="spinner-text">Loading...</div>
+        </div>
+    `;
+  document.body.appendChild(loadingOverlay);
+
+  // Show loading initially
+  showLoading();
+
   // Check for saved dark mode preference
   const darkModeToggle = document.getElementById('dark-mode-toggle');
   const savedDarkMode = localStorage.getItem('youtubeEnhancerDarkMode') === 'true';
